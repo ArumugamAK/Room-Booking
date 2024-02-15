@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/style2.css">
+    <script>
+        function pop(){
+            window.alert('Please Login');
+        }
+    </script>
+</head>
+<body>
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/1.jpg" alt="Room 1">
+            <div class="room-info">
+                {{!-- <h3>The Oasis Suite</h3> --}}
+                <h3 id='hello-world'>The Oasis Suite</h1>
+                <p>A luxurious suite with a beautiful view of the city.</p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★★☆☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 10% off for stays of 3 nights or more</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                {{#if data1}}
+                    <p class="discount">avaliable :{{data1}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking" onclick="handleClick('hello-world')"> --}}
+            {{!-- <button class="book-btn">Book Now</button> --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+             </a>
+        </div>  
+    </div> 
+      <script>
+    function handleClick(h3Id) {
+      localStorage.setItem('selectedH3', h3Id);
+    }
+  </script>   
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/Presidential.jpg" alt="Room 1">
+            <div class="room-info">
+                <h3>Presidential Suites </h3>
+                <p>presidential suites are known for being some of the most impressive. If a hotel offers this suite type, there are usually only one or two available in the entire hotel — even with the largest brands. </p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 25% off for stays of 2 nights </p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                    {{#if data2}}
+                    <p class="discount">avaliable :{{data2}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking"> --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+             </a>
+        </div>
+    </div> 
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/2.jpg" alt="Room 1">
+            <div class="room-info">
+                {{!-- <h3 >Bridal suites</h3> --}}
+                 <h3 id="bridal-suites">Bridal suites</h3>
+                <p>Hotels that specialize in wedding services and accommodation often offer bridal suites to help the bridal party prepare for the big day.</p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★☆☆☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 15% off for stays of 1 nights or more</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                 {{#if data3}}
+                    <p class="discount">avaliable :{{data3}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking" > --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+            {{!-- <button class="book-btn">Book Now</button> --}}
+        </a>
+        </div>
+    </div> 
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/Terrace.jpg" alt="Room 1">
+            <div class="room-info">
+                <h3>Terrace Suite</h3>
+                <p>If you like big terraces with wonderful view and you like to spend most of your time outside instead of inside in your vacation, terrace suite will be perfect for you. </p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★★★★</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 40% off for stays of 5 nights or more</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                 {{#if data4}}
+                    <p class="discount">avaliable :{{data4}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking"> --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+            {{!-- <button class="book-btn" >Book Now</button> --}}
+        </a>
+        </div>
+    </div>  
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/Junior.jpg" alt="Room 1">
+            <div class="room-info">
+                <h3>Junior suites</h3>
+                <p>These are typically smaller versions of standard suites. While the layout likely denotes a specific space intended for sleeping, as well as a designated living area, the two may not be physically separated by a barrier.</p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★★☆☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 5% off for stays of 3 nights or more</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                 {{#if data5}}
+                    <p class="discount">avaliable :{{data5}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking"> --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+            {{!-- <button class="book-btn">Book Now</button> --}}
+        </a>
+        </div>
+    </div> 
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/4.jpg" alt="Room 1">
+            <div class="room-info">
+                <h3>Honeymoon suites</h3>
+                <p>A honeymoon suite, or a 'romance suite', in a hotel or other places of accommodation denotes a suite with special amenities primarily aimed at couples and newlyweds.</p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: No Discount currently avaliable</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                 {{#if data6}}
+                    <p class="discount">avaliable :{{data6}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking"> --}}
+          
+          <button class="book-btn" onclick="return pop()">Book Now</button>{{!-- <button class="book-btn"  >Book Now</button> --}}
+        </a>
+        </div>
+    </div>
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/3.jpg" alt="Room 1">
+            <div class="room-info">
+                <h3>Deluxe Suite</h3>
+                <p>Deluxe rooms are usually larger than their standard counterparts, may include a bathtub and a shower in the bathroom, and include more high-end amenities.</p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★☆☆☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 20% off for stays of 3 nights or more</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                 {{#if data7}}
+                    <p class="discount">avaliable :{{data7}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking"> --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+            {{!-- <button class="book-btn">Book Now</button> --}}
+        </a>
+        </div>
+    </div>
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/Penthouse.jpg" alt="Room 1">
+            <div class="room-info">
+                <h3>Penthouse suites</h3>
+                <p>enthouse suites are usually located on the top floor of a luxury building and can take up the entire floor. Hotels that offer these accommodations are often found in the heart of iconic cities.</p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 27% off for stays of 2 nights</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                 {{#if data8}}
+                    <p class="discount">avaliable :{{data8}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking" > --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+            {{!-- <button class="book-btn" >Book Now</button> --}}
+        </a>
+        </div>
+    </div> 
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/Overwater.jpg" alt="Room 1">
+            <div class="room-info">
+                <h3>Overwater Bungalow</h3>
+                <p>The overwater bungalows (also known as overwater villas) are perfect for couples, honeymooners and people who love to see the view of the endless sea.</p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★☆☆☆☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 18% off for stays of 1 nights or more</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                 {{#if data9}}
+                    <p class="discount"  >avaliable :{{data9}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking"> --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+            {{!-- <button class="book-btn">Book Now</button> --}}
+        </a>
+        </div>
+    </div>
+    <div class="room-grid">
+        <div class="room">
+            <img src="../image/Royal.jpg" alt="Room 1">
+            <div class="room-info">
+                <h3>Royal Suite</h3>
+                <p>If you want to live like a king during your vacation with your family, you have your own butler and you like the opulence in every detail, royal suite can be  perfect for you.</p>
+                <p class="amenities">🏊 Pool Access | 🍽️ Dinner Included</p>
+                <p class="rating">Rating: ★★★☆☆</p>
+                <p class="price">Price: 1000 per night</p>
+                <p class="discount">Discount: 8% off for stays of 7 nights or more</p>
+                {{!-- <p class="discount">avaliable : </p> --}}
+                 {{#if data1}}
+                    <p class="discount">avaliable :{{data10}} </p>
+                    {{/if}}
+            </div>
+            {{!-- <a href="/booking"> --}}
+            <button class="book-btn" onclick="return pop()">Book Now</button>
+            {{!-- <button class="book-btn" >Book Now</button> --}}
+        </a>
+        </div>
+    </div>
+</body>
+</html>

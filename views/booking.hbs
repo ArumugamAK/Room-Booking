@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .form-control:read-only {
+            background-color: #e9ecef;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <form action="/booking" method="post">
+            <h2 class="mb-3">Room Booking</h2>
+            {{!-- <h1>Content from Page 1:</h1> --}}
+   
+   
+            {{!-- <iframe src="/room"></iframe> --}}
+
+            <h3 id="display-hello-world"></h3>
+            {{#if msg}}
+            <p class="{{msg_type}}">{{msg}}</p>
+            {{/if}}
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Prathiish raja">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="123-456-7890">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="123 Main St, City, State, Zip">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="aadhar" class="form-label">Aadhar Number</label>
+                    <input type="text" class="form-control" id="aadhar" placeholder="1234 1234 1234">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="nativity" class="form-label">Room Name</label>
+                    <select name="roomname" class="form-control" id="roomname">
+                        <option selected>Choose...</option>
+                        <option value="The Oasis Suite">The Oasis Suite</option>
+                        <option value="Presidential Suites">Presidential Suites</option>
+                        <option value="Bridal suites">Bridal suites</option>
+                        <option value="Terrace Suite">Terrace Suite</option>
+                        <option value="Junior suites">Junior suites</option>
+                        <option value="Honeymoon suites">Honeymoon suites</option>
+                        <option value="Deluxe Suite">Deluxe Suite</option>
+                        <option value="Penthouse suites">Penthouse suites</option>
+                        <option value="Overwater Bungalow">Overwater Bungalow</option>
+                        <option value="Royal Suite">Royal Suite</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="people" class="form-label">Number of People</label>
+                    <input type="number"  class="form-control" id="people" min="1" placeholder="1" onchange="calculateRooms()">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="num_rooms" class="form-label">Number of Rooms</label>
+                    <input type="number" name="noofroom" class="form-control" id="num_rooms" min="1" placeholder="1" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="arrival" class="form-label">Arrival Date</label>
+                    <input type="date" class="form-control" id="arrival">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="departure" class="form-label">Departure Date</label>
+                    <input type="date" class="form-control" id="departure">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="days" class="form-label">Number of Days</label>
+                    <input type="number" class="form-control" id="days" min="1" value="1" onchange="calculatePrice()">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="price" class="form-label">Total Price (USD)</label>
+                    <input type="number" class="form-control" id="price" readonly>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+    </div>
+
+    <script>
+        function calculateRooms() {
+            const numPeople = document.getElementById('people').value;
+            let numRooms;
+            if (numPeople <= 2) {
+                numRooms = 1;
+            } else if (numPeople <= 4) {
+                numRooms = 2;
+            } else {
+                numRooms = Math.ceil(numPeople / 2);
+            }
+            document.getElementById('num_rooms').value = numRooms;
+            calculatePrice();
+        }
+
+        function calculatePrice() {
+            const roomPrice = 1500;
+            const numRooms = document.getElementById('num_rooms').value;
+            const days = document.getElementById('days').value;
+            const totalPrice = roomPrice * numRooms * days;
+            document.getElementById('price').value = totalPrice;
+        }
+    </script>
+</body>
+</html>

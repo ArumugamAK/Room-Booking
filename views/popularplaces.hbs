@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>popular places</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/places.css">
+    <script type = "text/javascript">
+        window.addEventListener( "load", start, false );
+        
+        function start()
+        {
+        document.getElementById("picture").addEventListener("mouseover", over, false );
+        document.getElementById("picture").addEventListener("mouseout", out, false );
+        }
+    
+        function over()
+        {
+         document.getElementById("picture").setAttribute( "src", "../image/stan.jpg");
+        }
+    
+        function out()
+        {
+        document.getElementById("picture").setAttribute( "src", "../image/stanford.png");
+        }
+        
+    </script> 
+    
+</head>
+<body>
+    <div class="places">
+        <div class="heading">
+            <h1>POPULAR PLACES</h1>
+            <div class="but1">
+               <a href="/"><button  class="but">BACK TO MENU</button></a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/stanford.png" id = "picture" alt = "Heading Image">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Stanford</h5>
+                </div>
+                <p>Located in Salinas, the National Steinbeck Center honors Nobel prize winning author John Steinbeck. The museum houses a variety of artifacts, and interviews pertaining to John Steinbeck and its archives.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/Livermore California.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Livermore Valley </h5>
+                </div>
+                <p>45 minutes east of San Jose, Livermore Valley Wine Country welcomes visitors with over 40 wineries open for tastings and tours of the vineyards.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/bridge.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Big Sur and Bixby Bridge</h5>
+                </div>
+                <p>Big Sur is part of California’s central coast between Carmel and San Simeon. It has numerous state parks with breathtaking, unmatched coastal views, making it a must-visit area for outdoor enthusiasts. </p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/If A Tree Falls in the Forest - The Rabbit Room.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Big Basin Redwoods State Park</h5>
+                </div>
+                <p>Big Basin Redwoods is Californias oldest state park and is home to ancient coast redwoods that are more than 50 feet around and stand as tall as the Statue of Liberty.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/15 Places to See in Northern California _ San Jose.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Roaring Camp </h5>
+                </div>
+                <p>Travel over trestles, through towering redwood groves and up a winding narrow-gauge grade as conductors narrate the history of Roaring Camp depot, the railroad and the forest.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/m house.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Winchester Mystery House</h5>
+                </div>
+                <p>Few experiences can compare to what you’ll encounter at the Winchester Mystery House in San Jose.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/Disneyland Resort (@Disneyland) _ Twitter.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Disneyland</h5>
+                </div>
+                <p>Disneyland, located in Anaheim, is California's premier family destination and one of the top family vacation destinations in the US. </p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/Lake Tahoe.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Lake Tahoe</h5>
+                </div>
+                <p>Stunning Lake Tahoe lies high in the Sierra Nevada mountain range and is a popular year-round vacation destination in California.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/Universal Studios Hollywood.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Universal Studios Hollywood</h5>
+                </div>
+                <p>This amusement park and movie studio is one of the most popular attractions in California, and the perfect place for families with older children and teens.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/Hearst Castle.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Hearst Castle</h5>
+                </div>
+                <p>Hearst Castle, officially known as the Hearst San Simeon State Historical Monument, was started in 1919 and built over a 28-year period, resulting in a mix of architectural styles that make it quirky and stately all at the same time.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="../image/USS Midway Museum.png">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>USS Midway Museum </h5>
+                </div>
+                <p>If you've ever wanted to explore a giant aircraft carrier and find yourself in San Diego, you are in luck. Moored right in the center of the action, the USS Midway Museum is a real-life WWII ship that has been converted to a hands-on museum.</p>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/body {.css">
+    <script defer src="const form = document.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="/register"  method="post">
+            <h1>Sign Up</h1>
+             <h4>It's free and only takes a minute</h4>
+             {{#if msg}}
+            <p class="{{msg_type}}">{{msg}}</p>
+            {{/if}}
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Enter the full name">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="Enter your E-mail">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password" placeholder="Enter your password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirm Password</label>
+                <input id="password2"name="password2" type="password" placeholder="Enter your password">
+                <div class="error"></div>
+            </div>
+            <label>Gender:</label>  
+            <div class="the">  
+            
+            <input type="radio" id="gender" name="gender" value="male"/>   
+            <label>Male</label>
+            
+            <input type="radio" id="gender" name="gender" value="female"/>
+            <label>Female</label>
+            
+            <input type="radio" id="gender" name="gender" value="Others">
+            <label>Others</label>
+           </div>
+            <button  type="submit">Sign Up</button>
+        </form>
+            <p>
+                By clicking the Sign Up button,you agree to our <br />
+                <a href="front page.html">Terms and Condition</a> and <a href="front page.html">Policy Privacy</a>
+            </p>    
+    </div>
+    <p class="para-2">
+      Already have an account?  <a href="login.html">Login here</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(19, 51, 3),)rgb(3, 51, 18);
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  text-align: center;
+}
+.content h1{
+  font-size: 130px;
+  color: #e9e4e4;
+  font-weight: 359;
+  transition: 0.5s;
+}
+.content h1:hover{
+  -webkit-text-stroke: 2px #f5e6e7;
+  color: transparent;
+}
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.content a:hover
+{
+  background: transparent;
+  color: #000;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background: #ad1a1a;
+  padding: 15px 100px;
+}
+
+header .brand{
+  color: #ede1e1;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  color: #ffffff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #000;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+
+.section-two{
+  min-height: 30vh;
+  background: #a3a6a900;
+  padding: 20px 40px;
+}
+
+.section-two h2{
+  color: #971616;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.section-two p{
+  color: #000;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+
+
+.section-tw{
+  min-height: 30vh;
+  background: #a3a6a900;
+  padding: 20px 40px;
+}
+
+.section-tw h2{
+  color: #971616;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.section-tw p{
+  color: #000;
+  font-size: 18px;
+  margin: 10px 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+.footer{
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 5px;
+  margin: 50px 0 5px;
+  text-align: center;
+}
+.footer img{
+  width: 3%;
+  border-radius: 5px;
+}
+.footer a{
+  text-decoration: none;
+  color: #999;
+  font-size: 22px;
+  margin: 0 10px;
+}
+.footer hr{
+  background: #999;
+  height: 1px;
+  margin: 20px 0px;
+}
+.footer p{
+  padding-bottom: 15px;
+}
+
+
+.kitchen {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kitchen #intro {
+  font-size: 45px;
+  margin: 4px;
+}
+
+.kitchen #sum2 {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+.foodbox img {
+  width: 100%;
+}
+
+.foodbox .fooddesc {
+  font-weight: bold;
+}
+
+.rdesc {
+  padding-top: 6px;
+}
+
+.roomspic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rooms img {
+  width: 90%;
+  border-radius: 12px;
+  padding: 0;
+  margin-bottom: 17px;
+  margin-right: 2vh;
+  margin-left: 2vh;
+}
+
+.rooms .btn {
+  margin-bottom: 30px;
+}
+
+.kitchen #intro {
+text-align: center;
+font-size: 40px;
+margin: 6px;
+}
+
+.kitchen #sum1,
+#sum2 {
+text-align: center;
+font-size: 18px;
+color: #8d0003;
+margin: 6px;
+padding-top: 20px;
+}
+
+.kitchen #sum2 {
+font-size: 15px;
+padding-bottom: 12px;
+}
+
+.foodbox {
+display: flex;
+margin: 12px;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.foodcolumn .fooddesc {
+color: #8d0003;
+display: flex;
+justify-content: center;
+padding-bottom: 8px;
+}
+
+.foodcolumn div:hover {
+background-color: rgba(240, 240, 240, 0.945);
+border-radius: 34px;
+}
+
+.foodbox div {
+flex-wrap: wrap;
+}
+
+.foodbox img {
+width: 95%;
+padding: 30px;
+border-radius: 53px;
+}
+
+.foodbox .foodcolumn {
+box-sizing: border-box;
+margin-left: 24px;
+justify-content: center;
+align-items: center;
+}
+
+.rooms #rintro {
+text-align: center;
+font-size: 50px;
+margin: 18px;
+}
+
+.rooms #rsum1,
+#rsum2 {
+text-align: center;
+font-size: 18px;
+margin: 18px;
+color: #8d0003;
+}
+
+.rooms #rsum2 {
+font-size: 15px;
+padding-bottom: 12px;
+}
+
+.roomspic {
+  display: flex;
+}
+
+.roomspic img {
+  width: 40%;
+  padding: 3px;
+}
+
+.rdesc {
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 32px;
+  padding-right: 22px;
+  font-size: 18px;
+}
+
+#r1,
+#r3 {
+  flex-direction: row;
+}
+
+#r2,
+#r4 {
+  flex-direction: row-reverse;
+}
+
+button {
+  padding: 7px 75px;
+  background-color: #ad1a1a;
+  color: whitesmoke;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: #ad1a1a;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rooms{
+  height:auto;
+  width:100%;
+}
+.rooms h1{
+  margin:50px 0 0 0;
+  font-size: 13vh;
+  font-weight: bold;
+  text-align: center;
+}
+.rooms p{
+  margin:30px 0 0 0;
+  font-size:5vh;
+  text-align: center;
+}
+.roomimages{
+  width:100%;
+  margin:50px auto;
+  display:grid;
+  grid-template-rows: repeat(auto-fill,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  grid-auto-rows:1fr;
+}
+.innerimg{
+  margin:40px;
+  text-align: center;
+}
+.innerimg:hover{
+  box-shadow: 0 0 3px black;
+}
+.img2:hover{
+  transform: scale(1.01);
+}
+@media all and (max-width:400px){
+  .rooms h1{
+      margin:50px 0 0 0;
+      font-size: 10vh;
+      font-weight: bold;
+      text-align: center;
+  }
+  .rooms p{
+      font-size:3vh;
+      text-align: center;
+  }
+  .innerimg{
+      margin:30px;
+      text-align: center;
+  }
+}
+

@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../css/login 13.11.css">
+    <title>Login form</title>
+</head>
+<body>
+
+    <form action="/room1" method="post">
+        <div class="heading">Login</div>
+        <div class="text__field">
+            <label for="username">Email</label>
+             <i class="far fa-user"></i>
+            <input type="text" name="email" id="email" placeholder="Type your username">
+        </div>
+
+        <div class="text__field">
+            <label for="password">Password</label>
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder="Type your password">
+        </div>
+
+        <div class="flex">
+            <div class="check">
+              <input type="checkbox" id="remember" />
+              <label for="remember">Keep me login</label>
+            </div>
+
+            <a href="#" class="forgot">Forgot password ?</a>
+          </div>
+          <div class="btn">
+            <button type="submit">LOGIN</button>
+        </div>
+        <!-- <div class="button">
+          <!-- <a href="front page.html" class="btn">Login</a> -->
+          <a href="/register"class="btn2">Sign Up</a>
+        </div> -->
+    </form>
+    
+</body>
+</html>
